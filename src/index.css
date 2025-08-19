@@ -53,3 +53,6 @@ main {
   font-weight: bold;
   cursor: pointer;
 }
+.clicked {
+  background-color: rgba(89, 227, 145, 1);
+}

@@ -23,9 +23,7 @@
   display: flex;
   align-items: center;
 }
-.clicked {
-  background-color: rgba(89, 227, 145, 1);
-}
+
 .pp {
   color: rgba(74, 78, 116, 1);
   text-align: center;

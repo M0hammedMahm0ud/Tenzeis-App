@@ -1,3 +1,11 @@
 export default function Die(props) {
-  return <button>{props.value}</button>;
+  return (
+    <button
+      onClick={() =>
+        props.setIsClicked((prev) => [...prev, { id: props.id, clicked: true }])
+      }
+    >
+      {props.value}
+    </button>
+  );
 }
