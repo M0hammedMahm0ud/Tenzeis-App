@@ -33,20 +33,17 @@ export default function App() {
           die.isHeld ? die : { ...die, value: Math.ceil(Math.random() * 6) }
         )
       );
-    } else {
-      setDice(generateAllNewDice());
-    }
+    } else setDice(generateAllNewDice());
   }
 
   function hold(id) {
     setDice((oldDice) =>
-      oldDice.map((die) => {
-        return die.id === id ? { ...die, isHeld: !die.isHeld } : die;
-      })
+      oldDice.map((die) =>
+        die.id === id ? { ...die, isHeld: !die.isHeld } : die
+      )
     );
   }
   const rem = dice.filter((el) => el.isHeld === true);
-  console.log(rem);
   const diceElements = dice.map((dieObj) => (
     <Die
       key={dieObj.id}
