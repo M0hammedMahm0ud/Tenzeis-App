@@ -19,7 +19,7 @@ body {
 div#root {
   height: 100%;
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 main {
@@ -31,8 +31,8 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  max-height: 450px;
-  width: 450px;
+  max-height: 550px;
+  width: 500px;
 }
 
 .dice-container {
@@ -52,7 +52,4 @@ main {
   font-size: 1.75rem;
   font-weight: bold;
   cursor: pointer;
-}
-.clicked {
-  background-color: rgba(89, 227, 145, 1);
 }

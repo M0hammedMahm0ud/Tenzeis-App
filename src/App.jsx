@@ -57,10 +57,12 @@ export default function App() {
   return (
     <div className={styles.parentDiv}>
       <main>
-        {gameWon && <Confetti />}
+        {/* {gameWon && <Confetti />} */}
         <div aria-live="polite">
           {gameWon && (
-            <p>Congratulations! You won! Press "New Game" to start again.</p>
+            <p className={styles.congrate}>
+              Congratulations! You won! Press "New Game" to start again.
+            </p>
           )}
         </div>
         <p className={styles.pargraph}>Tenzies</p>
