@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import Die from "./Die";
 import { nanoid } from "nanoid";
+import Confetti from "react-confetti";
 import styles from "./styles.module.css";
 
 export default function App() {
@@ -58,7 +59,7 @@ export default function App() {
   return (
     <div className={styles.parentDiv}>
       <main>
-        {/* {gameWon && <Confetti />} */}
+        {gameWon && <Confetti />}
         <div aria-live="polite">
           {gameWon && (
             <p className={styles.congrate}>

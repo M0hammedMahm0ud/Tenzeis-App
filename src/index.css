@@ -33,6 +33,7 @@ main {
   gap: 2rem;
   max-height: 550px;
   width: 500px;
+  padding: 10px 10px;
 }
 
 .dice-container {
