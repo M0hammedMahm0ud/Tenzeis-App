@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import Die from "./Die";
 import { nanoid } from "nanoid";
-import Confetti from "react-confetti";
+import styles from "./styles.module.css";
 
 export default function App() {
   const [dice, setDice] = useState(() => generateAllNewDice());
@@ -55,22 +55,24 @@ export default function App() {
   ));
 
   return (
-    <main>
-      {gameWon && <Confetti />}
-      <div aria-live="polite" className="sr-only">
-        {gameWon && (
-          <p>Congratulations! You won! Press "New Game" to start again.</p>
-        )}
-      </div>
-      <h1 className="title">Tenzies</h1>
-      <p className="instructions">
-        Roll until all dice are the same. Click each die to freeze it at its
-        current value between rolls.
-      </p>
-      <div className="dice-container">{diceElements}</div>
-      <button ref={buttonRef} className="roll-dice" onClick={rollDice}>
-        {gameWon ? "New Game" : "Roll"}
-      </button>
-    </main>
+    <div className={styles.parentDiv}>
+      <main>
+        {gameWon && <Confetti />}
+        <div aria-live="polite">
+          {gameWon && (
+            <p>Congratulations! You won! Press "New Game" to start again.</p>
+          )}
+        </div>
+        <p className={styles.pargraph}>Tenzies</p>
+        <p className={styles.pp}>
+          Roll until all dice are the same. Click each die to freeze it at its
+          current value between rolls.
+        </p>
+        <div className="dice-container">{diceElements}</div>
+        <button ref={buttonRef} className={styles.btn} onClick={rollDice}>
+          {gameWon ? "New Game" : "Roll"}
+        </button>
+      </main>
+    </div>
   );
 }
