@@ -8,20 +8,24 @@ export default function App() {
   }
   return (
     <div className={styles.parentDiv}>
-      <p className={styles.pargraph}>Tenzies App</p>
       <main>
+        <p className={styles.pargraph}>Tenzies App</p>
+        <p className={styles.pp}>
+          Roll until all dice are the same. Click each die to freeze it at its
+          current value between rolls.
+        </p>
         <div className="dice-container">
           {diceArray.map((value, index) => (
             <Die value={value} key={index} />
           ))}
         </div>
+        <button
+          className={styles.btn}
+          onClick={() => setDiceArray(() => generateAllNewDice())}
+        >
+          Roll new Dice
+        </button>
       </main>
-      <button
-        className={styles.btn}
-        onClick={() => setDiceArray(() => generateAllNewDice())}
-      >
-        Roll new Dice
-      </button>
     </div>
   );
 }

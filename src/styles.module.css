@@ -13,7 +13,7 @@
   background-color: #031520;
 }
 .pargraph {
-  color: white;
+  color: rgba(43, 40, 58, 1);
   font-size: 2rem;
   font-weight: bold;
 }
@@ -24,4 +24,12 @@
   gap: 2rem;
   justify-content: center;
   align-items: center;
+}
+.clicked {
+  background-color: rgba(89, 227, 145, 1);
+}
+.pp {
+  color: rgba(74, 78, 116, 1);
+  text-align: center;
+  max-width: 300px;
 }
