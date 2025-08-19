@@ -23,7 +23,7 @@ export default function App() {
           className={styles.btn}
           onClick={() => setDiceArray(() => generateAllNewDice())}
         >
-          Roll new Dice
+          Roll
         </button>
       </main>
     </div>
