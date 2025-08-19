@@ -39,12 +39,13 @@ export default function App() {
 
   function hold(id) {
     setDice((oldDice) =>
-      oldDice.map((die) =>
-        die.id === id ? { ...die, isHeld: !die.isHeld } : die
-      )
+      oldDice.map((die) => {
+        return die.id === id ? { ...die, isHeld: !die.isHeld } : die;
+      })
     );
   }
-
+  const rem = dice.filter((el) => el.isHeld === true);
+  console.log(rem);
   const diceElements = dice.map((dieObj) => (
     <Die
       key={dieObj.id}
@@ -74,6 +75,7 @@ export default function App() {
         <button ref={buttonRef} className={styles.btn} onClick={rollDice}>
           {gameWon ? "New Game" : "Roll"}
         </button>
+        <p>Remaining Dices : {10 - rem.length}</p>
       </main>
     </div>
   );
