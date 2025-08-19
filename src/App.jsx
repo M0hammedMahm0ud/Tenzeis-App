@@ -59,7 +59,7 @@ export default function App() {
   return (
     <div className={styles.parentDiv}>
       <main>
-        {gameWon && <Confetti />}
+        {gameWon && <Confetti numberOfPieces={1000} recycle={false} />}
         <div aria-live="polite">
           {gameWon && (
             <p className={styles.congrate}>
