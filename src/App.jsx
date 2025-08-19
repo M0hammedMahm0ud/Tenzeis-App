@@ -50,6 +50,7 @@ export default function App() {
       value={dieObj.value}
       isHeld={dieObj.isHeld}
       hold={() => hold(dieObj.id)}
+      disabled={gameWon}
     />
   ));
 
