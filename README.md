@@ -1,4 +1,4 @@
-# Tenzies — Game (React Edition)
+# Tenzies Game (React Edition)
 
 **This the first capstone project from [scrimba](https://scrimba.com/learn-react-c0e) plateform (react basics course) instructor Bob Ziroll**
 
