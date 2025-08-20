@@ -1,6 +1,7 @@
 # Tenzies — Game (React Edition)
 
 **This the first capstone project from [scrimba](https://scrimba.com/learn-react-c0e) plateform (react basics course) instructor Bob Ziroll**
+
 A fast, minimalist implementation of the classic **Tenzies** dice game, built with **React** and deployed to **Netlify**. Roll the dice, hold the values you want to keep, and race to get all dice showing the same number.
 
 [Live Demo](https://tenzies-game-sc1.netlify.app/)
