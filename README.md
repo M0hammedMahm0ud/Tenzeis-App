@@ -8,19 +8,6 @@ A fast, minimalist implementation of the classic **Tenzies** dice game, built wi
 
 ---
 
-## About
-
-
-Tenzies is a casual dice game that's perfect for quick play sessions. This project focuses on clean UI, responsive behavior, and simple game logic that’s easy to follow and extend.
-
-**Why this project?**
-
-- Practice React hooks and component composition
-- Demonstrate state management and derived game state
-- Provide a compact, production-ready example you can deploy and customize
-
----
-
 ## Rules
 
 1. Click **Roll** to roll all dice.
